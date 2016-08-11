@@ -204,3 +204,16 @@ We thank you for all your support.
 ## <a name="license"></a> License
 
 Copyright (c) 2015 Nick Dodson. <http://nickdodson.com> . donate @ 0x2e1bd60c7154ec6040505b9056cb36713c0c3e56
+
+## 中文说明
+#### 如何在私链上部署上Weifund
+1. 在上面第二步使用过程中，需要使用私链的节点，举例如下：
+
+```
+ $mkdir -p wf/data  //创建一个专用目录
+ $cd wf
+ $geth --datadir data account new
+ $geth --datadir data --networkid 9512 --rpc --rpccorsdomain="http://localhost:3000" --unlock=0
+```
+
+2. 在私链上部署相关智能合约，请参考前面相关描述
